@@ -1,0 +1,7 @@
+
+This is a sample file.
+It contains multiple lines.
+Here is the first IP address: 0.0.0.0
+And here is the second IP address: 0.0.0.0
+Another line of text.
+End of file.
