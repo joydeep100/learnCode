@@ -21,3 +21,11 @@ print('hello world'.split(' '))
 list = [1, 2, 3]
 
 print(eval('list[' + '0' + ']'))
+
+# ternary
+# return "Positive" if num > 0 else "Negative" if num < 0 else "Zero"
+
+word = "banana"
+sorted_word = sorted(word)
+print(sorted_word)  # Output: ['a', 'a', 'a', 'b', 'n', 'n']
+print(''.join(sorted_word))  # this would output full word

@@ -20,6 +20,8 @@ list.insert(0, 99) #insert at start
 list.pop() #removes from last
 list.pop(0) #remove item at index 0
 
+list.remove(2) #removes the first occurance of an element, if not found gives ValueError
+
 list.extend([-1,-2,-3])
 # print(list)
 
