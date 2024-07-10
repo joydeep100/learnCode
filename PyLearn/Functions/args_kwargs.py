@@ -14,7 +14,7 @@ def fun(num1, *args):
         total += num
     return total
 
-print(fun(*[1, 2, 3, 4]))  # 10
+print(fun(*[1, 2, 3, 4]))  # 10, can pass tuple or list
 
 # **kwargs (or any name) will collect all args as named arguments or a dict
 def fun2(**kwargs):

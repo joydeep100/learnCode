@@ -24,21 +24,16 @@ print(abs(-1))
 
 print(sum((1,2,3)))
 
-print(round(10/3)) # 3
-print(round(10/3, 2)) # 3.33
+round(1.5) # 2
+round(1.4) # 1
+round(3.1423, 2) # 3.14
 
 # count++ is invalid in python
 
 import random
-
-random_integer = random.randint(1, 10) # 1 and 10 inclusive
+random.randint(1, 10) # 1 and 10 inclusive
 
 # type case int() | str() | float()
-
-# rounding
-round(1.5) # 2
-round(1.4) # 1
-round(3.1423, 2) # 3.14
 
 # floor and ceil
 import math

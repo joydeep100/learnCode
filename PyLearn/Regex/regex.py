@@ -29,6 +29,7 @@ Character class
 [aeiou]
 [a-f]{2,}
 [a-zA-Z]
+[a-zA-Z0-9]
 
 Anchors and boundaries
 ----------------------

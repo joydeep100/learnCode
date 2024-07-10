@@ -4,7 +4,6 @@ print(type(()) is tuple)
 print(type({}) is dict)
 print(type(set()) is not set)  # false
 
-
 # Check if x is an instance of int
 print(isinstance(10, int))  # Output: True
 

@@ -25,6 +25,8 @@ people = [
 # sort alphbetically based on key --> person's name
 print(sorted(people, key=lambda line: line["name"]))
 
+print(sorted(people, key=lambda line: line["name"], reverse=True))
+
 ''' Applying sorted on a dict
 dict.items() gives a iterator of tuples (k,v)
 so applying the same on sortet we need to
