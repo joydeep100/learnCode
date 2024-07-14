@@ -11,10 +11,6 @@ name = input("What is your name :")
 print('hello'.upper())
 print('HELLO!'.lower())
 
-# sorted and reversed
-print(''.join(list(reversed('hello'))))
-print(''.join(list(sorted('hello'))))
-
 # default delimited is ' ', so this is same as .split()
 print('hello world'.split(' '))
 
