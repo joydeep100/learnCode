@@ -1,8 +1,13 @@
 # set (also known as hash sets) have only unique values and they do not have order (index)
 # they are mutable
 
-# Create a new hash set 
-s = set() # or set({1, 2, 3, 3})
+# *** VVI *** - sets are represented using { }
+s0 = set({1, 2, 3})
+print(s0)  # 1,2,3
+
+# Create a new hash set
+s = set()  # or set({1, 2, 3, 3})
+
 
 s.add(1)
 s.add(2)
@@ -16,12 +21,11 @@ for num in s:
     print(num)
 
 s.add(4)
-s.remove(1) # will raise KeyError if not found
-s.pop() #removes a random value form the set, raises KeyError if empty
+s.remove(1)  # will raise KeyError if not found
 
 print(s)
 
-# common
+# common in both
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
 
@@ -43,21 +47,19 @@ unique_to_2 = set2 - set1
 return sorted(list(unique_to_1)), sorted(list(unique_to_2))
 
 '''
-
-
-#subset
+# subset
 set1 = {1, 2}
 set2 = {1, 2, 3}
 print(set1.issubset(set2))  # Output: True
 
-#superset
+# superset
 set1 = {1, 2, 3}
 set2 = {1, 2}
 print(set1.issuperset(set2))  # Output: True
 
 
 # to make the set immutable
-frozen = frozenset([1, 2, 3, 4])
+frozen = frozenset({1, 2, 3, 4})
 print(frozen)  # Output: frozenset({1, 2, 3, 4})
 
 # Add / Lookup / Remove is O(1) in a set and space wise its O(n)

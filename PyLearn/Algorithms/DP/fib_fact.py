@@ -1,4 +1,4 @@
-# Fibonacci series 0,1,1,2,3,5,8...
+# Fibonacci series 0, 1, 1, 2, 3, 5, 8...
 # basic approach
 def fib(n):
     if n <= 1:
@@ -9,12 +9,11 @@ def fib(n):
 # using memoization
 
 
-def fibdp(n, computed={0: 1, 1: 1}):
-
+def fibdp(n, computed={0: 0, 1: 1}):
     if n not in computed:
-        computed[n] = fibdp(n-1) + fibdp(n-2)
+        computed[n] = fibdp(n-1, computed) + fibdp(n-2, computed)
 
-    return computed[0]
+    return computed[n]
 
 
 print(fibdp(5))
@@ -32,4 +31,4 @@ def fact(n):
 
 
 print(fact(5))  # 120
-print(fact(-20))  # None
+# print(fact(-20))  # None

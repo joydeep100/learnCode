@@ -20,9 +20,9 @@ is checks if they are stored in same memory address.
 
 # abs, sum and round
 
-print(abs(-1))
+abs(-1)
 
-print(sum((1,2,3)))
+sum((1,2,3))
 
 round(1.5) # 2
 round(1.4) # 1
