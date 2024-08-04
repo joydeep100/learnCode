@@ -52,3 +52,8 @@ names2 = ['joy', 'deep']
 names2[0], names2[1] = names2[1] , names2[0]
 
 print(names2)
+
+# Loop backwards
+list = [1,2,3]
+for i in range(len(list)-1, -1, -1):
+    print(list[i])

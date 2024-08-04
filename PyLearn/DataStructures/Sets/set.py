@@ -2,7 +2,7 @@
 # they are mutable
 
 # *** VVI *** - sets are represented using { }
-s0 = set({1, 2, 3})
+s0 = set({1, 2, 3})  # or s = {1,2,3}
 print(s0)  # 1,2,3
 
 # Create a new hash set

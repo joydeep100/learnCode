@@ -1,11 +1,17 @@
 '''
 Generator function are just functions which instead of using "return" keyword it uses "yield".
-
 That means it can return multiple times.
-
 So it basically returns an iterator.
-
 and when yeild is invoked, it returns and stops there unitl the "next()" keyword is invoked.
+
+A generator object is a special type of iterator that is produced by a generator function or 
+a generator expression. It allows you to iterate over a sequence of values lazily, 
+meaning it generates items one at a time and only when required, 
+instead of storing the entire sequence in memory at once.
+
+Advantages 
+- improved memory efficiency
+- lesser processing overheads
 '''
 
 def count_up_to(n):

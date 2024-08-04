@@ -1,10 +1,13 @@
 #sum only even index
 
+# So doing the first and (+2th) index
+
 def recursiveSumEven(arr, idx=0):
-    if idx > len(arr)-1:
+    
+    if not arr: return 0
+
+    if idx >= len(arr)-1:
         return 0
-    if idx == len(arr)-1:   #to handle odd length array
-        return arr[idx]
     return arr[idx] + recursiveSumEven(arr, idx + 2)
     
 # Testing the function

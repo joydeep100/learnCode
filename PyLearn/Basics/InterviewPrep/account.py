@@ -50,16 +50,13 @@ def solution(queries):
         #TOP ACTIVITY FLOW
         elif task == 'TOP_ACTIVITY':
             count = int(args[0])
-            print(accounts)
-            print('_'*30)
-            print(sorted(accounts.items(), key= lambda account: account[1]['balance'], reverse=True))
-            # top_transactions = sorted(accounts.items(), key=lambda item: item[1]["transactions"], reverse=True)[:count]
-            # res = []
-            # for acc_id, acc_details in top_transactions:
-            #     res.append(f'{acc_id}({acc_details["transactions"]})')
-            # log.append(', '.join(sorted(res)))
+            top_transactions = sorted(accounts.items(), key=lambda item: item[1]["transactions"], reverse=True)[:count]
+            res = []
+            for acc_id, acc_details in top_transactions:
+                res.append(f'{acc_id}({acc_details["transactions"]})')
+            log.append(', '.join(sorted(res)))
             
-    # return log
+    return log
   
 queries = [["CREATE_ACCOUNT","1","accountA"], 
  ["CREATE_ACCOUNT","2","accountC"], 

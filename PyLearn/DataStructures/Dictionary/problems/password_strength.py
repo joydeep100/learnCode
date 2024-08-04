@@ -27,6 +27,7 @@ def multi_password_strength_counter(passwords):
                 dict["has_spl"] = True
 
         res.append(all(dict.values()))
+        
     return res
 
 

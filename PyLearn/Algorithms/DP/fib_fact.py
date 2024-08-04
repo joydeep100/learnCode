@@ -24,7 +24,7 @@ print(fibdp(5))
 def fact(n):
     if (n < 0):
         return None    # note factorial of -ve numbers do not exist
-    if (n >= 0 and n <= 1):
+    if (n == 0 or n == 1):
         return 1
     else:
         return n * fact(n-1)
@@ -32,3 +32,17 @@ def fact(n):
 
 print(fact(5))  # 120
 # print(fact(-20))  # None
+
+# fact iterative
+def fact(n):
+    # error conditons are same
+    if (n < 0):
+        return None    # note factorial of -ve numbers do not exist
+    if (n == 0 or n == 1):
+        return 1
+    
+    res = 1
+    # since last index is 0 we go upto 0, which is only till first index
+    for i in range(n, 0, -1):
+        res = res * i
+    return res
