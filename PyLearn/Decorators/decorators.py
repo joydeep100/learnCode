@@ -1,21 +1,18 @@
-def wrapper_parent_func(fun):
-    ''' we have to define a wrapper function'''
-    def wrapper(): 
-        fun()
-        print('Now I have extended the functionality\n')
-    return wrapper # vvi, notice the return position here
+'''Decorators in Python are a powerful and flexible tool that allows you to modify 
+or enhance the behavior of functions or methods. They are essentially functions that 
+wrap another function, modifying its behavior without permanently changing it. 
+Decorators are commonly used for tasks like logging, access control, memoization, 
+and enforcing types.'''
 
-def greet():
-    print("Hi my name is joy")
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the decorated function is called")
+        func()
+        print("Something is happening after the decorated function is called")
+    return wrapper  # vvi, to return the wrapper
 
-@wrapper_parent_func
-def greet_sugar():
-    print("Hi my name is joy, I am also having super power")
+@my_decorator
+def say_hello():
+    print("Hello!")
 
-# now there are two ways to call this 1. using old school way
-
-wrapped_greet = wrapper_parent_func(greet)
-wrapped_greet()
-
-# or lets try using the syntactic sugar @wrapper_func
-greet_sugar()
+say_hello()
