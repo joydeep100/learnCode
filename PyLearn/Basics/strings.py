@@ -1,3 +1,6 @@
+# ASCII codes
+print(ord('a'), ord('A')) #97 , 64
+
 # f-string
 a = 1
 print(f"hi, the value of a is {a}")
@@ -21,7 +24,7 @@ print(eval('list[' + '0' + ']'))
 # ternary
 # return "Positive" if num > 0 else "Negative"
 
-'''
+''']
 count(): Returns the number of times a specified value occurs in a string.
 endswith(): Returns true if the string ends with the specified value.
 startswith(): Returns true if the string starts with the specified value.
