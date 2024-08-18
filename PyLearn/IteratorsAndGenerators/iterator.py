@@ -32,6 +32,7 @@ def my_for(iterable):
 
 
 my_for("hello")
+# my_for(['h', 'e', 'l', 'l', 'o']) # also will work
 
 '''
 h

@@ -33,7 +33,7 @@ accounts = {'accountA': {'timestamp': '10', 'balance': 1000, 'transactions': 140
             'accountB': {'timestamp': '8', 'balance': 800, 'transactions': 1200}
 }
 
-print(sorted(accounts.items(), key=lambda account: account[1]["transactions"], reverse=True))  
+print(sorted(accounts.items(), key=lambda line: line[1]["transactions"], reverse=True))  
 ''' if we do not give .items() by default the keys would be considered and keys would be sorted
     now we get an iterator with each item as ('accountA','{'timestamp': '10', 'balance': 1000, 'transactions': 1400}') and so on
     so to sort based on transactions, we need to do account[1]["transactions"]
