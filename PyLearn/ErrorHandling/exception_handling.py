@@ -13,7 +13,7 @@ except NameError as err:
 
 try:
     print('try block')
-except (NameError, KeyError) as err:
+except (NameError, KeyError, ValueError, IndexError, TypeError) as err:
     print(err)
 finally:
     print('prints no matter what')

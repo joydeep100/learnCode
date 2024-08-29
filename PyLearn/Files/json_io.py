@@ -17,4 +17,3 @@ with open("Files/data.json", "w") as json_file:
 with open("Files/data.json", "r") as json_file:
     json_file_data = json.load(json_file)
     print(json_file_data)
-

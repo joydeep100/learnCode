@@ -32,5 +32,12 @@ while True:
         print("END OF LOOP")
         break
 
+# Generator expression
 
+# Generator expression to generate squares of numbers from 0 to 9
+squares = (x**2 for x in range(10))
+
+# You can iterate over the generator to get the values
+for square in squares:
+    print(square)
 

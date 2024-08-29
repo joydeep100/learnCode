@@ -11,4 +11,4 @@ print(default_dict)  # Output: defaultdict(<class 'int'>, {'a': 1})
 
 default_dict2 = defaultdict(list) 
 default_dict2['a'].append('some value')
-print(default_dict2['a'])
+print(default_dict2['a']) # ['some value']
