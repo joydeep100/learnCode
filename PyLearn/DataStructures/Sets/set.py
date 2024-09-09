@@ -22,6 +22,7 @@ for num in s:
 
 s.add(4)
 s.remove(1)  # will raise KeyError if not found
+s.clear() # to purge set
 
 print(s)
 

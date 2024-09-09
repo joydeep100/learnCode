@@ -52,7 +52,7 @@ AND (certification = 'PG' OR certification = 'R');
 -- options :: =, <>, >, <, >=, <=
 
 -- IN
-select title,language from films where language in ( 'English','Spanish','French');
+select title,language from films where language in ('English','Spanish','French');
 
 -- SELECT COUNT(*) FROM people WHERE birthdate IS NULL;
 
@@ -67,8 +67,8 @@ SELECT name FROM companies WHERE name LIKE 'DataC_mp';
 
 SELECT AVG(budget) FROM films;
 SELECT MAX(budget) FROM films;
-SELECT SUM(budget) FROM films;
 SELECT MIN(budget) FROM films;
+SELECT SUM(budget) FROM films;
 
 -- AS - Aliasing
 SELECT (10 / 3) as result;
@@ -84,7 +84,7 @@ select title, gross - budget as net_profit from films;
 SELECT title FROM films ORDER BY release_year DESC;
 
 -- Sorting by multiple columns
-select birthdate,name from people order by birthdate,name;
+select birthdate, name from people order by birthdate, name;
 
 -- Grouping
 SELECT sex, count(*)
@@ -106,4 +106,14 @@ from films
 group by country
 having count(*) > 10
 order by country
+-- desc // for descending order
 limit 5;
+
+-- join (inner)
+select * from customers
+join employees
+on customers.id = employees.id
+
+select col1, col2 as col3 from customers
+join employees
+on customers.id = employees.id

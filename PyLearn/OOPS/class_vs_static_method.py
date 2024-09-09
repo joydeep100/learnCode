@@ -3,7 +3,7 @@ class MyClass:
     class_variable = 0
 
     def __init__(self):
-        MyClass.class_variable += 1
+        MyClass.class_variable += 1 # <--
 
     @classmethod
     def get_class_variable(cls):
@@ -11,7 +11,7 @@ class MyClass:
 
     @classmethod
     def set_class_variable(cls, value):
-        cls.class_variable = value
+        cls.class_variable = value # <--
 
 # Create instances
 obj1 = MyClass()
