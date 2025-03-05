@@ -11,10 +11,15 @@ print(f"My name is {name}")
 ** exponentiaition
 // integer division
 
-is vs ==
+# is vs ==
+a = [1, 2, 3]
+b = [1, 2, 3]
 
-is checks if they are stored in same memory address.
-== checks for equality of values
+print(a == b)  # True (values are equal)
+print(a is b)  # False (different memory locations)
+
+c = a  # Assigning the same reference
+print(a is c)  # True (same memory location)
 
 '''
 
